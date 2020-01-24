@@ -1,0 +1,15 @@
+.arrow-left {
+    position: absolute;
+    top: -90%;
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../img/left-arrow.png');
+    fill: #616983;
+}
+
+.btn-margin {
+    margin-top: 75px;
+}

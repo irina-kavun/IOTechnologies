@@ -1,0 +1,50 @@
+.form-subtitle {
+    font-size: 32px;
+    color: #616983;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-button:hover .arrow-right {
+    transform: translateX(10px);
+}
+
+.arrow-right {
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../../img/right-arrow.png');
+    transition: 0.5s;
+}
+
+.reset-text {
+    color: #616983;
+    font-size: 32px;
+}
+
+.reset-link {
+    color: #3A91E2;
+    font-size: 32px;
+}
+
+@media (max-width: 1000px) {
+    .reset-text{
+        color: #fff;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-subtitle {
+        font-size: 28px;
+    }
+
+    .reset-text{
+        color: #616983;
+    }
+}
