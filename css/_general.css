@@ -5,8 +5,13 @@ body {
 
 .page-wrapper {
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -19,13 +24,24 @@ body {
 }
 
 .support {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -108,6 +124,26 @@ body {
     margin-top: 50px;
 }
 
+.form-input::-webkit-input-placeholder {
+    font-size: 34px;
+    color: #616983;
+}
+
+.form-input::-moz-placeholder {
+    font-size: 34px;
+    color: #616983;
+}
+
+.form-input:-ms-input-placeholder {
+    font-size: 34px;
+    color: #616983;
+}
+
+.form-input::-ms-input-placeholder {
+    font-size: 34px;
+    color: #616983;
+}
+
 .form-input::placeholder {
     font-size: 34px;
     color: #616983;
@@ -126,23 +162,50 @@ body {
 .error {
     border-color: #D80B43;
     color: #fff;
+    -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-perspective: 1000px;
     perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+    10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 @keyframes shake {
     10%, 90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
         transform: translate3d(-1px, 0, 0);
     }
     20%, 80% {
+        -webkit-transform: translate3d(2px, 0, 0);
         transform: translate3d(2px, 0, 0);
     }
     30%, 50%, 70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
         transform: translate3d(-4px, 0, 0);
     }
     40%, 60% {
+        -webkit-transform: translate3d(4px, 0, 0);
         transform: translate3d(4px, 0, 0);
     }
 }
@@ -156,6 +219,8 @@ body {
     width: 200px;
     top:50%;
     left: 100%;
+    -webkit-transform:translate(0, -50%);
+    -ms-transform:translate(0, -50%);
     transform:translate(0, -50%);
     padding:10px 20px;
     color:#444444;
@@ -165,7 +230,9 @@ body {
     border-radius:5px;
     position:absolute;
     z-index:99999999;
+    -webkit-box-sizing:border-box;
     box-sizing:border-box;
+    -webkit-box-shadow:0 1px 8px rgba(0,0,0,0.5);
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 
@@ -186,8 +253,11 @@ body {
     height:12px;
     left:0;
     top:50%;
+    -webkit-transform:translate(50%,-50%) rotate(-45deg);
+    -ms-transform:translate(50%,-50%) rotate(-45deg);
     transform:translate(50%,-50%) rotate(-45deg);
     background-color:#EEEEEE;
+    -webkit-box-shadow:0 1px 8px rgba(0,0,0,0.5);
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
 
@@ -211,8 +281,8 @@ body {
 .btn-gradient {
     position: relative;
     background: #126CD5;
-    background: -webkit-linear-gradient(left, #126CD5, #48A5D9);
-    background: -moz-linear-gradient(left, #126CD5, #48A5D9);
+    background: -webkit-gradient(linear, left top, right top, from(#126CD5), to(#48A5D9));
+    background: -o-linear-gradient(left, #126CD5, #48A5D9);
     background: linear-gradient(to right, #126CD5, #48A5D9);
     z-index: 1;
 }
@@ -225,10 +295,12 @@ body {
     bottom: 0;
     left: 0;
     background: #48A5D9;
-    background: -webkit-linear-gradient(left,  #48A5D9, #126CD5);
-    background: -moz-linear-gradient(left, #48A5D9, #126CD5);
+    background: -webkit-gradient(linear, left top, right top, from(#48A5D9), to(#126CD5));
+    background: -o-linear-gradient(left, #48A5D9, #126CD5);
     background: linear-gradient(to right, #48A5D9, #126CD5);
     z-index: -1;
+    -webkit-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
     transition: opacity 1s linear;
     opacity: 0;
 }
@@ -239,7 +311,11 @@ body {
 
 @media (max-width: 1000px) {
     .page-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
     }
 

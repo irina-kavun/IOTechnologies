@@ -4,11 +4,18 @@
 }
 
 .signin-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .form-button:hover .arrow-right {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
     transform: translateX(10px);
 }
 
@@ -20,6 +27,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../../img/right-arrow.png');
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 

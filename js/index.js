@@ -1,11 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const signInFormInput = document.querySelectorAll('.form-input'),
-        emailInput = document.getElementById('email'),
         signInForm = document.querySelector('.signin-form'),
         passwordInput = document.getElementById('password');
-
-    console.log(signInForm);
 
     //validation by input types
     const emailValidation = email => {
@@ -58,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             : target.classList.remove('active');
  };
 
-    // //remove error if input is focused
+    //remove error if input is focused
     const focusedInput = event => {
         const target = event.target;
         target.classList.remove('error');
@@ -92,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     signInForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        console.log(e);
-        console.log(validation(e));
+        validation(e);
     });
 });
