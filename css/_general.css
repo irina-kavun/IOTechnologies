@@ -5,6 +5,7 @@ body {
 
 .page-wrapper {
     height: 100vh;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,8 +48,8 @@ body {
 
 .logo-img {
     display: inline-block;
-    height: 40px;
-    width: 52px;
+    height: 30px;
+    width: 40px;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../img/logo.png');
@@ -56,7 +57,7 @@ body {
 
 .logo-text {
     font-family: "MuseoSansCyrlW03", sans-serif;
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 300;
     color: #fff;
     opacity: 0.42;
@@ -64,7 +65,7 @@ body {
 }
 
 .support-text {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 200;
     color: #fff;
     margin: 50px 0 20px 0;
@@ -82,22 +83,22 @@ body {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    font-size: 24px;
-    padding: 15px 0;
+    font-size: 16px;
+    padding: 10px 0;
     cursor: pointer;
     margin: 5px;
 }
 
 .helpcenter-btn {
-    width: 245px;
+    width: 160px;
 }
 
 .support-btn {
-    width: 222px;
+    width: 140px;
 }
 
 .split-text {
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 200;
     color: #fff;
 }
@@ -108,44 +109,44 @@ body {
 
 .form-title {
     color: #fff;
-    font-size: 64px;
+    font-size: 35px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form-input {
-    width: 575px;
+    width: 350px;
     outline: 0;
     background-color: transparent;
     border-width: 0 0 2px;
     border-color: #616983;
-    font-size: 32px;
+    font-size: 21px;
     padding: 25px 0;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .form-input::-webkit-input-placeholder {
-    font-size: 34px;
+    font-size: 21px;
     color: #616983;
 }
 
 .form-input::-moz-placeholder {
-    font-size: 34px;
+    font-size: 21px;
     color: #616983;
 }
 
 .form-input:-ms-input-placeholder {
-    font-size: 34px;
+    font-size: 21px;
     color: #616983;
 }
 
 .form-input::-ms-input-placeholder {
-    font-size: 34px;
+    font-size: 21px;
     color: #616983;
 }
 
 .form-input::placeholder {
-    font-size: 34px;
+    font-size: 21px;
     color: #616983;
 }
 
@@ -216,17 +217,17 @@ body {
 
 /*Tiptool*/
 .tiptool {
-    width: 200px;
+    width: 130px;
     top:50%;
     left: 100%;
     -webkit-transform:translate(0, -50%);
     -ms-transform:translate(0, -50%);
     transform:translate(0, -50%);
-    padding:10px 20px;
+    padding:10px;
     color:#444444;
     background-color:#EEEEEE;
     font-weight:normal;
-    font-size:20px;
+    font-size:14px;
     border-radius:5px;
     position:absolute;
     z-index:99999999;
@@ -264,7 +265,7 @@ body {
 
 .form-button {
     display: inline-block;
-    width: 575px;
+    width: 350px;
     font-family: inherit;
     font-weight: bold;
     border-radius: 7px;
@@ -272,10 +273,10 @@ body {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-size: 26px;
-    padding: 20px 0;
+    font-size: 16px;
+    padding: 10px 0;
     cursor: pointer;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 50px 0;
 }
 
 .btn-gradient {
@@ -319,12 +320,13 @@ body {
         justify-content: space-around;
     }
 
-    .form-title {
-        font-size: 50px;
+    .support-text {
+        margin-top: 30px;
     }
 
     .form-input {
-        margin-top: 30px;
+        margin-top: 20px;
+        padding: 20px 0;
     }
 }
 
@@ -337,20 +339,8 @@ body {
         display: none;
     }
 
-    .form-section {
-        width: 80%;
-    }
-
     .form-subtitle {
         font-size: 28px;
-    }
-
-    .form-input {
-        width: 100%;
-    }
-
-    .form-button {
-        width: 100%;
     }
 
     .tiptool {

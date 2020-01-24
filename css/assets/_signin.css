@@ -1,5 +1,5 @@
 .form-subtitle {
-    font-size: 32px;
+    font-size: 18px;
     color: #616983;
 }
 
@@ -21,9 +21,9 @@
 
 .arrow-right {
     display: inline-block;
-    height: 20px;
+    height: 12px;
     width: 30px;
-    margin-left: 10px;
+    margin-left: 5px;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('../../img/right-arrow.png');
@@ -34,12 +34,12 @@
 
 .reset-text {
     color: #616983;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .reset-link {
     color: #3A91E2;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -50,7 +50,7 @@
 
 @media (max-width: 600px) {
     .form-subtitle {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .reset-text{

@@ -1,6 +1,6 @@
 .arrow-left {
     position: absolute;
-    top: -100%;
+    top: -55%;
 }
 
 .arrow-left path {
@@ -8,12 +8,12 @@
 }
 
 .btn-margin {
-    margin-top: 75px;
+    margin-top: 40px;
 }
 
 @media (max-width: 1000px) {
     .arrow-left {
-        top: -35%;
+        top: -25%;
     }
 
 }
