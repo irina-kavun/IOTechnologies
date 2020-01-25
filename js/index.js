@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const bluredInput = event => {
+    const isBluredInput = event => {
          const target = event.target;
 
         validation(event)
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
  };
 
     //remove error if input is focused
-    const focusedInput = event => {
+    const isFocusedInput = event => {
         const target = event.target;
         target.classList.remove('error');
     };
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     signInFormInput.forEach(element => {
-        element.addEventListener('focus', focusedInput);
-        element.addEventListener('blur', bluredInput)
+        element.addEventListener('focus', isFocusedInput);
+        element.addEventListener('blur', isBluredInput)
     });
 
     signInForm.addEventListener('submit', (e) => {
